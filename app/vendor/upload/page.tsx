@@ -1,5 +1,5 @@
 'use client';
-
+const supabase = getSupabase();
 import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { ImagePlus, Loader2, Pencil, Save, Trash2, Upload, X } from 'lucide-react';

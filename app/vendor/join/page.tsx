@@ -244,16 +244,15 @@ My receipt is attached.`;
                   />
                 </label>
 
-                <label className="relative block">
-                  <MapPin className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#111111]/60" />
-                  <span className="sr-only">Market</span>
-                  <input
-                    required
-                    value={form.market}
-                    onChange={set('market')}
-                    placeholder="Market (e.g. Market Eke Awka)"
-                    className={inputClass}
-                  />
+            <select
+  required
+  value={form.market}
+  onChange={set('market')}
+  className={inputClass}
+>
+  <option value="">Select Market</option>
+  <option value="Eke Awka Main Market">Eke Awka Main Market</option>
+</select>
                 </label>
 
                 <label className="relative block">
